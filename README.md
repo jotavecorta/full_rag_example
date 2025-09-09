@@ -15,9 +15,24 @@ A clean, extensible, and production-grade Retrieval-Augmented Generation (RAG) p
 
 ---
 
+## Project Structure
+```
+rag_system/
+├── app/                # Streamlit frontend
+├── generator/          # Generator strategies (OpenAI, Azure)
+├── models/             # Document builders, summarizers
+├── pipeline/           # RAGPipeline (Facade)
+├── retriever/          # Retriever and vector store logic
+└── main.py             # Console test interface
+```
+
+---
+
 ## Installation
 
 ```bash
 git clone https://github.com/jotavecorta/full_rag_example.git
 cd full_rag_example
 pip install -r requirements.txt
+```
+
